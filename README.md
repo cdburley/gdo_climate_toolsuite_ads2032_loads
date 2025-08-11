@@ -32,7 +32,7 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
 1) Loads in CISO, IPCO, NEVP, and PACE are modeled as a whole in TELL but are separated in GridView. To create the data
 for these BAs I used the whole load simulated by TELL and distributed it to the subregions within the BA using the 
 annual total load in each subregion to portion out the TELL loads. This means those BAs will have the same
-hour-to-hour variability (governed by the BA map in TELL) but different magnitudes.
+hour-to-hour variability (governed by the overarching BA in TELL) but different magnitudes.
 2) The BAs in Canada (AESO and BCHA) and Mexico (CFE) are not modeled by TELL. The time-series for those BAs are the 
 same as those in the original GridView file. Likewise, there are no values for TH_Malin, TH_Mead, and TH_PV.
 3) The WECC 2032 ADS is formatted for a leap year (i.e., it has 8784 hourly load values). Because the historical 
