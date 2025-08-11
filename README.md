@@ -11,11 +11,8 @@ cannot be immediately reproduced. This data is readily available though if we wa
 fully reproducible manner.
 
 ## Output Files
-The output of this processing is stored in the [data](data/) directory with the filenames 
+The output of this processing is stored in the [TELL_Loads](data/TELL_Loads) subdirectory with the filenames 
 "TELL_Loads_2032_Based_on_YYYY_Weather.csv".
-
-## Summary Plots
-Quick-look plots analyzing the data are stored in the [plots](plots/) directory.
 
 ## Citations
 Any use of this data in a publication, presentation, or report should use the following citations. Please contact 
