@@ -1,15 +1,15 @@
-# nuclear_heat_wave_loads
+# gdo_climate_toolsuite_ads2032_loads
 This repository houses the raw data and processing scripts to create the hourly load time series by 
-Balancing Authority for the nuclear project. Data are scaled to match the 2030 annual total loads data by BA. 2030 loads
-were shared by Kostas on 2-Feb 2024. The future loads for different weather years are based on the Total ELectricity 
-Loads (TELL) model.
+Balancing Authority for the GDO Climate Toolsuite project. Data are scaled to match the 2032 annual total loads data by 
+BA from the WECC 2032 Anchor Data Set (ADS). 2032 ADS loads were shared by Osten on 11-Aug 2025. The future loads for 
+different weather years are based on the Total ELectricity Loads (TELL) model.
 
 ## Input Files
 The input data needed to recreate this process is stored in the [data](data/) directory.
 
 ## Output Files
 The output of this processing is stored in the [data](data/) directory with the filenames 
-"TELL_Loads_2030_Based_on_YYYY_Weather_With_Climate_Change.csv".
+"TELL_Loads_2030_Based_on_YYYY_Weather.csv".
 
 ## Summary Plots
 Quick-look plots analyzing the data are stored in the [plots](plots/) directory.
@@ -31,7 +31,8 @@ Jones, A. D., Rastogi, D., Vahmani, P., Stansfield, A., Reed, K., Thurber, T., U
 ## Notes
 1) Loads in CISO, IPCO, NEVP, and PACE are modeled as a whole in TELL but are separated in GridView. To create the data
 for these BAs I used the whole load simulated by TELL and distributed it to the subregions within the BA using the 
-annual total load in each subregion to portion out the TELL loads.
+annual total load in each subregion to portion out the TELL loads. This means those BAs will have the same
+hour-to-hour variability (governed by the BA map in TELL) but different magnitudes.
 2) The BAs in Canada (AESO and BCHA) and Mexico (CFE) are not modeled by TELL. The time-series for those BAs are the 
 same as those in the original GridView file. Likewise, there are no values for TH_Malin, TH_Mead, and TH_PV.
 
