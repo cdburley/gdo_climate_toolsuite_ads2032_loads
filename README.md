@@ -5,7 +5,7 @@ BA from the WECC 2032 Anchor Data Set (ADS). 2032 ADS loads were shared by Osten
 different weather years are based on the Total ELectricity Loads (TELL) model.
 
 ## Input Files
-The input data needed to recreate this process is stored in the [data](data/) directory. Because of data volume 
+The ADS data needed to recreate this process is stored in the [data](data/) directory. Because of data volume 
 constraints I didn't push the raw TELL multilayer perceptron (MLP) model output to this directory so the workflow 
 cannot be immediately reproduced. This data is readily available though if we want to package this workflow in a 
 fully reproducible manner.
