@@ -38,6 +38,10 @@ same as those in the original GridView file. Likewise, there are no values for T
 3) The WECC 2032 ADS is formatted for a leap year (i.e., it has 8784 hourly load values). Because the historical 
 weather data input into TELL only have 8760 hourly values in non leap years this the final day of loads is "missing" in
 the output files in non leap years.
+4) The underlying MLP models in the version of TELL used in this analysis were trained on EIA-930 load data from 
+2016-2018. This means that the base hourly load profiles they generate (before scaling) reflect the load that would 
+have occurred had weather from a historical year impacted the grid as it existed in 2016-2019. We can update the 
+underlying MLP models to be trained on more recent data if that is important for this project.
 
 ## BAs in the WECC 
 >
